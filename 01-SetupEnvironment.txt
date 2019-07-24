@@ -1,0 +1,39 @@
+# within the virtual environment, create a new app within your main Django project 
+python manage.py startapp blog  /* blog is the name of a sample app */ 
+
+# the blog app will be created as a new folder in the main project folder and contains the following files:- 
+>  blog
+  > __init__.py 
+  > admin.py 
+  > apps.py 
+  > migrations 
+    > __init__.py 
+    > models.py 
+    > tests.py 
+    > views.py 
+> db.sqlite3.py 
+> projectName 
+  > __init__.py 
+  > settings.py 
+  > urls.py 
+  > wsgi.py 
+manage.py
+
+
+# now within the app (blog) directory we need to create a urls.py file 
+# this is similar to the urls.py file in the project level directory 
+# in the new urls.py file add the following lines
+
+from django.urls import path 
+from . import views     /* the . represents the root folder */
+urlpatterns = [ 
+  path('', views.home, name='Blog-home'),    /* his represents the main home page of the app */ 
+]
+
+
+# now within the views.py file within the app directory, we add a function which is the logic to define a route
+/* note that there is an initial import: from django.shortcuts import render */
+
+def home ():
+  return  
+  
