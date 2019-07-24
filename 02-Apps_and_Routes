@@ -20,7 +20,7 @@
 manage.py
 
 
-# now within the app (blog) directory we need to create a urls.py file 
+# now within the app [blog] directory we need to create a urls.py file 
 # this is similar to the urls.py file in the project level directory 
 # in the new urls.py file add the following lines
 ---------------------------------------------------------------------------------------------------
